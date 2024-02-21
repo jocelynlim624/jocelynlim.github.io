@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(202, 191, 182);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-size: 20px;
+    background-color: rgb(61, 68, 39);
+    color: rgb(202, 191, 182);
+    text-align: center;
+}
+
+.header img {
+    width: 50%;
+}
+
+.nav {
+    background-color: rgb(168, 148, 130);
+    padding: 20px;
+    text-align: left;
+}
+
+.nav h1 {
+    margin: 0;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    margin: 0;
+    padding: 10px;
+}
+
+.nav li {
+    padding: 10px;
+}
+
+.nav a:hover {
+    padding: 10px;
+    background-color: rgb(196, 183, 172);
+    color: black;
+}
+
+.middle-content {
+    padding: 20px;
+    background-color: rgb(202, 191, 182);
+}
+
+.middle-content .profile-photo {
+    width: 400px;
+    padding-left: 100px;
+}
+
+.skills-icon {
+    width: 15%;
+}
+
+.right-content {
+    background-color: rgb(196, 183, 172);
+    padding: 20px;
+}
+
+.contact {
+    display: flex;
+    justify-content: left;
+}
+
+.contact h4 {
+    padding: 10px;
+}
+
+.socials-icon {
+    width: 10%;
+}
+
+.footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(61, 68, 39);
+    color: rgb(202, 191, 182);
+}
+
+.nav .icon {
+    display: none;
+  }
+
+@media screen and (max-width: 600px){
+    .nav {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .nav h1 {
+        display: none;
+    }
+
+    .middle-content {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        text-align: center;
+    }
+
+    .middle-content .profile-photo {
+        padding-left: 40px;
+    }
+
+    .right-content {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .right-content h1 {
+        text-align: center;
+    }
+
+    .contact {
+        padding-left: 30%;
+    }
+
+    .nav .icon {
+        display: block;
+        float: right;
+    }
+}
+
+    @media screen and (max-width:600px) {
+        .nav.responsive {
+          position: relative;
+          padding: 0px;
+        }
+
+        .left.responsive .icon {
+            position: absolute;
+            right: 20;
+            top: 8;
+          }
+
+          .left.responsive a {
+            display: block;
+            padding: 10px;
+        }
+
+        .nav a:not(:first-child) {display: none;}
+  .nav a.icon {
+    float: right;
+    display: block;
+    position: relative;
+    
+  }
+}
+
+@media screen and (max-width: 600px) {
+    .nav.responsive {position: relative;}
+    .nav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
