@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 65">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #cabfb6;
+        font-family: Avenir-Heavy, Avenir;
+        font-size: 38.94px;
+        font-weight: 800;
+      }
+
+      .cls-2 {
+        fill: #535c34;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="TEXT">
+    <g>
+      <rect class="cls-2" y="0" width="65" height="65" rx="12" ry="12"/>
+      <text class="cls-1" transform="translate(7.76 44.84)"><tspan x="0" y="0">Ae</tspan></text>
+    </g>
+  </g>
+</svg>
